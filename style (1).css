@@ -1,0 +1,111 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background: linear-gradient(170deg, #ffffff 50%, #e0f7ff 100%);
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  /* Sidebar Styles */
+  .sidenav {
+    height: 100vh;
+    width: 44px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #87CEEB;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .sidenav:hover {
+    width: 200px;
+  }
+  
+  .sidenav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+  }
+  
+  .sidenav a:hover {
+    background-color: #A1C6E7;
+  }
+  
+  .sidenav a i {
+    margin-right: 10px;
+  }
+  
+  .sidebar-logo {
+    width: 120px;
+    display: none;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidenav:hover .sidebar-logo {
+    display: block;
+    transform: scale(1.1);
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    margin-left: 200px;
+    padding: 60px;
+    flex: 1;
+  }
+  
+  .intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .intro-text h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .centered-image {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Styles */
+  .about-section, .skills-container, .contact-container {
+    padding: 40px 0;
+  }
+  
+  #about, #skills, #contact {
+    padding-top: 50px;
+  }
+  
+  #about h2, #skills h2, #contact h2 {
+    color: #1e3c72;
+  }
+  
+  a.back-link, a.back-links {
+    color: #1e3c72;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
